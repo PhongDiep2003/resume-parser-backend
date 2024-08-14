@@ -1,16 +1,4 @@
 {
-  "builds": [
-    {
-      "src": "api/app.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "api/app.py"
-    }
-  ],
   "functions": {
     "api/**": {
         "excludeFiles": "{.next,*.cache,node_modules,public,app}/**"
