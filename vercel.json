@@ -10,5 +10,10 @@
       "src": "/(.*)",
       "dest": "api/app.py"
     }
-  ]
+  ],
+  "functions": {
+    "api/**": {
+        "excludeFiles": "{.next,*.cache,node_modules,public,app}/**"
+    }
+  }
 }
